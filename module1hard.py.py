@@ -1,17 +1,17 @@
-grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]  # Это СПИСОК с оценками
-students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}                        # Это МНОЖЕСТВО студентов
-students_sort = sorted(students)                         # Отсортированое МНОЖЕСТВО студентов
-nom_student = 0                                          # Счетчик номера студента
-ocenka_odna = ' '                                         # Одна оценка - переменная для подсчёта среднего
+grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]  # ╨н╤В╨╛ ╨б╨Я╨Ш╨б╨Ю╨Ъ ╤Б ╨╛╤Ж╨╡╨╜╨║╨░╨╝╨╕
+students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}                        # ┬Э├в┬о ┼Т┬Н┼╜тАатАжтАШтАЩтАЪ┼╜ ├б├в├г┬д┬е┬н├в┬о┬в
+students_sort = sorted(students)                         # ┼╜├в├б┬о├а├в┬и├а┬о┬в┬а┬н┬о┬е ┼Т┬Н┼╜тАатАжтАШтАЩтАЪ┼╜ ├б├в├г┬д┬е┬н├в┬о┬в
+nom_student = 0                                          # тАШ├з┬е├в├з┬и┬к ┬н┬о┬м┬е├а┬а ├б├в├г┬д┬е┬н├в┬а
+ocenka_odna = ' '                                         # ┼╜┬д┬н┬а ┬о├ж┬е┬н┬к┬а - ┬п┬е├а┬е┬м┬е┬н┬н┬а├п ┬д┬л├п ┬п┬о┬д├б├з├▒├в┬а ├б├а┬е┬д┬н┬е┬г┬о
 while nom_student <= 4:
     kol_ocenok = 1
     sred_ocenka = 0
     ocenka_all = grades[nom_student]
-    print(students_sort[nom_student], ' < Все его оценки > ', grades[nom_student])
+    print(students_sort[nom_student], ' < тАЪ├б┬е ┬е┬г┬о ┬о├ж┬е┬н┬к┬и > ', grades[nom_student])
     while kol_ocenok <= len(ocenka_all):
-        ocenka_odna = ocenka_all[kol_ocenok-1:kol_ocenok:1] # Извлечение одной оценки
+        ocenka_odna = ocenka_all[kol_ocenok-1:kol_ocenok:1] # ╦Ж┬з┬в┬л┬е├з┬е┬н┬и┬е ┬о┬д┬н┬о┬й ┬о├ж┬е┬н┬к┬и
         sred_ocenka = sred_ocenka + int(ocenka_odna.pop(0))
         kol_ocenok = kol_ocenok + 1
     nom_student = nom_student + 1
-    print('Средняя оценка - ',sred_ocenka / (kol_ocenok-1))
+    print('тАШ├а┬е┬д┬н├п├п ┬о├ж┬е┬н┬к┬а - ',sred_ocenka / (kol_ocenok-1))
 
